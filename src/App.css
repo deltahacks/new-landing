@@ -46,3 +46,11 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+body {
+	width: 100%;
+	height: 100%;
+	/* background: rgb(168,148,208); */
+	/* background-repeat: no-repeat; */
+	/* background: linear-gradient(180deg, rgba(168,148,208,1) 0%, rgba(255,142,105,1) 20%, rgba(255,225,149,1) 38%, rgba(71,244,255,1) 52%, rgba(0,123,186,1) 67%, rgba(3,71,109,1) 82%, rgba(0,0,0,1) 100%); */
+}

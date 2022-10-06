@@ -31,7 +31,7 @@ function App() {
       </p> */}
 
 
-      {/* <Background/> */}
+      <Background/>
       <Navigation/>
     </div>
   );

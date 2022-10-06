@@ -1,11 +1,12 @@
 import React from "react";
-import Logo from '../assets/Logo.svg'
-import Facebook from '../assets/Facebook.svg'
-import Instagram from '../assets/Instagram.svg'
-import Linkedin from '../assets/Linkedin.svg'
-import TikTok from '../assets/TikTok.svg'
-import Youtube from '../assets/Youtube.svg'
+import Logo from '../../assets/Logo.svg'
+import Facebook from '../../assets/Facebook.svg'
+import Instagram from '../../assets/Instagram.svg'
+import Linkedin from '../../assets/Linkedin.svg'
+import TikTok from '../../assets/TikTok.svg'
+import Youtube from '../../assets/Youtube.svg'
 import "./navigation.css";
+
 
 const Navigation = () => {
     return (
