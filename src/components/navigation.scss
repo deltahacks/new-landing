@@ -1,0 +1,16 @@
+.navigation {
+    background-color: rgba(71, 71, 71, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 151px 0 151px;
+    height: 75px;
+}
+
+.social-container {
+    .social-logo {
+        height: 50px;
+        width: 50px;
+        margin-left: 32px;
+    }
+}
