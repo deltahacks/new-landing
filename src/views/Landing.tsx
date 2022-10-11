@@ -1,5 +1,5 @@
-import logoImage from "../assets/logo.svg";
-import mlh from "../assets/mlh.svg";
+import logoImage from "../../public/assets/logo.svg";
+import mlh from "../../public/assets/mlh.svg";
 import Navigation from "../components/navigation/navigation";
 
 const LandingPage = () => {
@@ -11,7 +11,7 @@ const LandingPage = () => {
           <img src={logoImage} className="w-full h-full" alt="logo"></img>
           <div className="flex flex-row sm:pl-24 justify-end items-center mr-36">
             <img src={mlh} className="w-auto h-4" />
-            <span className="text-sm pl-0.25 pt-0.25 whitespace-nowrap">
+            <span className="text-sm pl-1 pt-1 whitespace-nowrap">
               OFFICIAL MEMBER
             </span>
           </div>
