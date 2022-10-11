@@ -1,5 +1,5 @@
-import logoImage from "../../public/assets/logo.svg";
-import mlh from "../../public/assets/mlh.svg";
+import logoImage from "../../public/logo.svg";
+import mlh from "../../public/mlh.svg";
 import Navigation from "../components/navigation/navigation";
 
 const LandingPage = () => {
