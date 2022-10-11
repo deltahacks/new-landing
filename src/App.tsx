@@ -1,5 +1,5 @@
 import { useState } from "react";
-import LandingPage from "./components/Landing";
+import LandingPage from "./views/Landing";
 
 function App() {
   return (
