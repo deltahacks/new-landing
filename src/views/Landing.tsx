@@ -1,5 +1,6 @@
-import logoImage from "../../public/logo.svg";
-import clouds from "../../public/Clouds.svg";
+import logoImage from "../assets/logo.svg";
+import mlh from "../assets/mlh.svg"
+import clouds from "../assets/Clouds.svg";
 import Navigation from "../components/navigation/navigation"
 
 const LandingPage = () => {
@@ -8,10 +9,10 @@ const LandingPage = () => {
       <Navigation />
       <div className="relative flex items-center justify-center flex-col font-minecraft p-14 min-h-screen ">
         <div>
-          <img src={logoImage} className="px-12" alt="logo"></img>
-          <div className="flex flex-row justify-end items-center mr-36">
-            <img src="/mlh.svg" className="w-auto h-4" />
-            <span className="pl-0.5 pt-0.25">OFFICIAL MEMBER</span>
+          <img src={logoImage} className="w-full h-full" alt="logo"></img>
+          <div className="flex flex-row sm:pl-24 justify-end items-center mr-36">
+            <img src={mlh} className="w-auto h-4" />
+            <span className="text-sm pl-0.25 pt-0.25 whitespace-nowrap">OFFICIAL MEMBER</span>
           </div>
         </div>
         <div className="text-4xl font-bold mb-5"></div>
