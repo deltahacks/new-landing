@@ -1,7 +1,7 @@
 import logoImage from "../assets/logo.svg";
-import mlh from "../assets/mlh.svg"
+import mlh from "../assets/mlh.svg";
 import clouds from "../assets/Clouds.svg";
-import Navigation from "../components/navigation/navigation"
+import Navigation from "../components/navigation/navigation";
 
 const LandingPage = () => {
   return (
@@ -12,7 +12,9 @@ const LandingPage = () => {
           <img src={logoImage} className="w-full h-full" alt="logo"></img>
           <div className="flex flex-row sm:pl-24 justify-end items-center mr-36">
             <img src={mlh} className="w-auto h-4" />
-            <span className="text-sm pl-0.25 pt-0.25 whitespace-nowrap">OFFICIAL MEMBER</span>
+            <span className="text-sm pl-0.25 pt-0.25 whitespace-nowrap">
+              OFFICIAL MEMBER
+            </span>
           </div>
         </div>
         <div className="text-4xl font-bold mb-5"></div>
@@ -50,7 +52,6 @@ const LandingPage = () => {
         </div>
       </div>
     </div>
-
   );
 };
 
