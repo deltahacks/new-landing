@@ -1,6 +1,5 @@
 import logoImage from "../assets/logo.svg";
 import mlh from "../assets/mlh.svg";
-import clouds from "../assets/Clouds.svg";
 import Navigation from "../components/navigation/navigation";
 
 const LandingPage = () => {
