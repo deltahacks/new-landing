@@ -1,7 +1,7 @@
 import Logo from "../../../public/Logo_1.svg";
 import Facebook from "../../../public/Facebook.svg";
 import Instagram from "../../../public/Instagram.svg";
-import Linkedin from "../../../public/Linkedin.svg";
+import Linkedin from "../../../public/LinkedIn.svg";
 import Twitter from "../../../public/Twitter.svg";
 
 const socialIcons = {
