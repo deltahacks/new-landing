@@ -1,4 +1,4 @@
-import Logo from "../../../public/Logo_1.svg";
+import Logo from "../../../public/DH9.svg";
 import Facebook from "../../../public/Facebook.svg";
 import Instagram from "../../../public/Instagram.svg";
 import Linkedin from "../../../public/LinkedIn.svg";
@@ -43,15 +43,16 @@ const NavButton = ({ title }: { title: string }) => {
 const Navigation = () => {
   return (
     <div className="flex justify-between items-center bg-slate-600 bg-opacity-40 w-full h-12">
-      <div className="flex justify-center items-center">
-        <a href="#" target="_blank" className="ml-8">
-          <img src={Logo} alt="Deltahacks logo" className="h-10 w-10 mr-4" />
-        </a>
-        {buttons.map((title) => (
-          <NavButton key={title} title={title} />
-        ))}
+      <div className="h-9 w-9 flex justify-center align-center ml-2">
+        <img src={Logo} alt="Deltahacks logo" />
       </div>
-      <div className="flex justify-center align-center mr-8">
+      {/* <div>
+                {buttons.map((title) => (
+                    <NavButton key={title} title={title} />
+                ))}
+            </div> */}
+
+      <div className="flex justify-center align-center">
         {Object.entries(socialIcons).map(([key, value]) => (
           <SocialIcon key={key} title={key} logo={value.img} />
         ))}
