@@ -8,7 +8,7 @@ module.exports = {
         alt: "Tailwind CSS Logo",
       },
       fontFamily: {
-        minecraft: ["Minecraft", "sans-serif"],
+        minecraft: ["Minecraftia", "sans-serif"],
       },
     },
   },
