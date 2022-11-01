@@ -33,7 +33,7 @@ const LandingPage = () => {
           <div className="flex flex-col items-center  w-100 h-100 mt-10">
             <div className="mBG px-12 py-2 md:px-20 md:py-5 mt-3">
               <a
-                href="#"
+                href="https://portal.deltahacks.com/"
                 target="_blank"
                 rel="noreferrer"
                 className="text-white text-center text-xl md:text-3xl tracking-wider "
