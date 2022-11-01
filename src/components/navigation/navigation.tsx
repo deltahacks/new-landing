@@ -7,25 +7,33 @@ import Twitter from "../../../public/Twitter.svg";
 const socialIcons = {
   Facebook: {
     img: Facebook,
-    url: "https://www.facebook.com/thedeltahacks/"
+    url: "https://www.facebook.com/thedeltahacks/",
   },
   Instagram: {
     img: Instagram,
-    url: "https://www.instagram.com/deltahacks/?hl=en"
+    url: "https://www.instagram.com/deltahacks/?hl=en",
   },
   Linkedin: {
     img: Linkedin,
-    url: "https://www.linkedin.com/company/deltahacks/mycompany/"
+    url: "https://www.linkedin.com/company/deltahacks/mycompany/",
   },
   Twitter: {
     img: Twitter,
-    url: "https://twitter.com/deltahacks"
+    url: "https://twitter.com/deltahacks",
   },
 };
 
 const buttons = ["About", "FAQ", "Sponsors", "Contact"];
 
-const SocialIcon = ({ logo, title, url }: { logo: any; title: string, url: string }) => {
+const SocialIcon = ({
+  logo,
+  title,
+  url,
+}: {
+  logo: any;
+  title: string;
+  url: string;
+}) => {
   return (
     <a href={url} className="mr-2 filter hover:brightness-90" target="_blank">
       <img src={logo} alt={title} className="h-8 w-8"></img>
