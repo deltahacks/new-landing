@@ -7,7 +7,7 @@ const Intro = () => {
     <div className="absolute w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
       <img src={clouds} alt="clouds"></img>
     </div>
-    <div className="relative flex items-center justify-center flex-col font-minecraft p-14 min-h-screen ">
+    <div className="relative flex items-center justify-center flex-col p-14 min-h-screen ">
       <div>
         <img src={logoImage} className="w-full h-full" alt="logo"></img>
         <div className="flex justify-center align-center md:flex-row md:justify-end md:items-center p-1">

@@ -1,13 +1,13 @@
 import Navigation from "../components/navigation/navigation";
-import AboutUsPane from "../components/carrousel/about-us-pane";
+import Caroussel from "../components/carrousel/Caroussel";
 import Intro from "../views/Intro"
 
 const LandingPage = () => {
   return (
-    <div>
+    <div className="font-minecraft">
       <Navigation />
       <Intro />
-      <AboutUsPane />
+      <Caroussel />
     </div>
   );
 };
