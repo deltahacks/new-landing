@@ -1,12 +1,10 @@
 import logoImage from "../../public/logo.svg";
 import mlh from "../../public/mlh.svg";
+
 import clouds from "../../public/Clouds.png";
 
 const Intro = () => {
   return (<>
-    <div className="absolute w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-      <img src={clouds} alt="clouds"></img>
-    </div>
     <div className="relative flex items-center justify-center flex-col p-14 min-h-screen ">
       <div>
         <img src={logoImage} className="w-full h-full" alt="logo"></img>
@@ -15,6 +13,9 @@ const Intro = () => {
           <span className="text-xs md:text-lg ml-2 whitespace-nowrap">
             OFFICIAL MEMBER
           </span>
+        </div>
+        <div className="absolute w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+          <img src={clouds} alt="clouds"></img>
         </div>
       </div>
       <div className="text-4xl font-bold mb-5"></div>

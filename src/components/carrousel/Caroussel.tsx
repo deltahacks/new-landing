@@ -26,7 +26,7 @@ const Carrousel = () => {
     { title: "The Hackathon for Change",
       desktopDescription: [
         "DeltaHacks is the annual hackathon for change, it's even in the name!",
-        "The primary focus of DeltaHacks is to enable hackers from all over to make a change, whether it be in education, environment, health or any other field, we're extremely passionate about hacking to make a positive change!",
+        "The primary focus of DeltaHacks is to enable hackers from all over to make a positive change in any field! We work with McMaster University to welcome hackers of all levels!",
         "We work with McMaster University to welcome hackers of all levels, from the novice to the most experienced! We supply the food, venue, and workshops to provide even the most seasoned veterans with new experiences.",
         "Now in our 9th year running, DeltaHacks 9 is our biggest and best DeltaHacks yet. Join us this January and take part in an experience you won’t forget!",
       ],
@@ -67,17 +67,17 @@ const Carrousel = () => {
 
   return (
     <div className="px-8 sm:px-14 overflow-hidden">
-      <div className="min-h-screen width-full relative flex items-center justify-center flex-col">
+      <div className="min-h-screen w-full relative flex items-center justify-center flex-col">
         {carroussel.map((pane, id) =>
-          <CarousselPane id={id} numPanes={carroussel.length} activePane={activePane}>
+          <CarousselPane key={id} id={id} numPanes={carroussel.length} activePane={activePane}>
             <div className="hidden sm:block space-y-4">
               <h1 className="text-4xl">{pane.title}</h1>
               <br />
-              {pane.desktopDescription.map(line => <p>{line}</p>)}
+              {pane.desktopDescription.map((line, i) => <p key={i}>{line}</p>)}
             </div>
             <div className="sm:hidden space-y-4 text-sm">
               <h1 className="text-3xl">{pane.title}</h1>
-              {pane.mobileDescription.map(line => <p>{line}</p>)}
+              {pane.mobileDescription.map((line, i) => <p key={i}>{line}</p>)}
             </div>
           </CarousselPane>
         )}
