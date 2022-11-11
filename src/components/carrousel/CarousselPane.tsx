@@ -22,11 +22,11 @@ const CarousselPane = ({children, id, numPanes, activePane}: Props) => {
 
   // Left inactive
   } else if (id==mod(activePane-1, numPanes)) {
-    style = "translate-x-3/4 scale-75 duration-500 z-10"
+    style = "translate-x-3/4 opacity-90 scale-75 duration-500 z-10"
 
   // Right inactive
   } else if (id==mod(activePane+1, numPanes)) {
-    style = "-translate-x-3/4 scale-75 duration-500 z-10"
+    style = "-translate-x-3/4 opacity-90 scale-75 duration-500 z-10"
 
   // default
   } else {

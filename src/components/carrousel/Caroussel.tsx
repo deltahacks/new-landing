@@ -1,12 +1,19 @@
-import {useState} from "react";
+import {useState, useEffect} from "react";
 import CarousselPane, {mod} from "./CarousselPane";
 
 // ! not adaptive enough for IPHONE SE or samsung galaxy s8+
 const Carrousel = () => {
   const [activePane, setActivePane] = useState(0);
   const [numPanes, setNumPanes] = useState(4);
+  const [animateArrows, setAnimateArrows] = useState(-5);
 
   // TODO put title and descriptions in an object and iterate through that
+
+  useEffect(() => {
+    setTimeout(() => {
+      setAnimateArrows(-animateArrows);
+    }, 1000);
+  }, [animateArrows])
 
   return (
     <div className="px-8 sm:px-14 overflow-hidden">
@@ -79,23 +86,25 @@ const Carrousel = () => {
         <div className="absolute t-0 r-0 b-0 l-0 m-auto h-4/6 sm:h-3/5 w-full max-w-4xl">
           <div className="z-40 relative h-full w-full">
             <button
-              className="text-6xl text-white text-shadow"
+              className="text-6xl font-bold text-gray-200 duration-1000"
               style={{
+                textShadow: "-3px -3px black, -3px 3px black, 3px 3px black, 3px -3px black",
                 position: "absolute",
                 top: '50%',
-                transform: 'translate(0, -50%)',
+                transform: `translate(${-animateArrows}px, -50%)`,
               }}
               onClick={() => setActivePane(mod(activePane-1, numPanes))}
             >
               {"<"}
             </button>
             <button
-              className="absolute text-6xl text-white text-shadow"
+              className="text-6xl font-bold text-gray-200 duration-1000"
               style={{
+                textShadow: "-3px -3px black, -3px 3px black, 3px 3px black, 3px -3px black",
                 position: "absolute",
                 top: '50%',
                 right: "0",
-                transform: 'translate(0, -50%)',
+                transform: `translate(${animateArrows}px, -50%)`,
               }}
               onClick={() => setActivePane(mod(activePane+1, numPanes))}
             >
