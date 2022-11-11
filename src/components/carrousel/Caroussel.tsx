@@ -1,5 +1,5 @@
 import {useState} from "react";
-import CarousselPane from "./CarousselPane";
+import CarousselPane, {mod} from "./CarousselPane";
 
 // ! not adaptive enough for IPHONE SE or samsung galaxy s8+
 const Carrousel = () => {
@@ -76,10 +76,33 @@ const Carrousel = () => {
             <p>the work you could get done in a day, or perhaps just create something that could make a lot of peoples lives significantly easier!</p>
           </div>
         </CarousselPane>
-        <button
-          className="w-44 h-44 z-40 bg-slate-700"
-          onClick={() => setActivePane((activePane+1) % numPanes)} 
-        />
+        <div className="absolute t-0 r-0 b-0 l-0 m-auto h-4/6 sm:h-3/5 w-full max-w-4xl">
+          <div className="z-40 relative h-full w-full">
+            <button
+              className="text-6xl text-white text-shadow"
+              style={{
+                position: "absolute",
+                top: '50%',
+                transform: 'translate(0, -50%)',
+              }}
+              onClick={() => setActivePane(mod(activePane-1, numPanes))}
+            >
+              {"<"}
+            </button>
+            <button
+              className="absolute text-6xl text-white text-shadow"
+              style={{
+                position: "absolute",
+                top: '50%',
+                right: "0",
+                transform: 'translate(0, -50%)',
+              }}
+              onClick={() => setActivePane(mod(activePane+1, numPanes))}
+            >
+              {">"}
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   )
