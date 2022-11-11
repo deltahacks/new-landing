@@ -18,19 +18,19 @@ const CarousselPane = ({children, id, numPanes, activePane}: Props) => {
   let style;
   // Active pane
   if (id==activePane) {
-    style = "opacity-100 scale-100 z-50"
+    style = "opacity-100 scale-100 z-20"
 
   // Left inactive
   } else if (id==mod(activePane-1, numPanes)) {
-    style = "translate-x-{-25%} opacity-30 scale-75 duration-500"
+    style = "translate-x-3/4 scale-75 duration-500 z-10"
 
   // Right inactive
   } else if (id==mod(activePane+1, numPanes)) {
-    style = "translate-x-{25%} opacity-30 scale-75 duration-500"
+    style = "-translate-x-3/4 scale-75 duration-500 z-10"
 
   // default
   } else {
-    style = "opacity-100 scale-100 z-0"
+    style = "opacity-100 opacity-30 scale-50 z-0"
   }
 
   return (<>

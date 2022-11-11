@@ -9,7 +9,7 @@ const Carrousel = () => {
   // TODO put title and descriptions in an object and iterate through that
 
   return (
-    <div className="px-8 sm:px-14">
+    <div className="px-8 sm:px-14 overflow-hidden">
       <div className="min-h-screen width-full relative flex items-center justify-center flex-col">
         <CarousselPane id={0} numPanes={numPanes} activePane={activePane}>
           <div className="hidden sm:block space-y-4">
@@ -76,6 +76,10 @@ const Carrousel = () => {
             <p>the work you could get done in a day, or perhaps just create something that could make a lot of peoples lives significantly easier!</p>
           </div>
         </CarousselPane>
+        <button
+          className="w-44 h-44 z-40 bg-slate-700"
+          onClick={() => setActivePane((activePane+1) % numPanes)} 
+        />
       </div>
     </div>
   )
