@@ -121,7 +121,7 @@ const Faq = () => {
             </div>
             <Tab.Panels className="mt-5">
                 {Object.values(categories).map((info, idx) => (
-                    <Tab.Panel key={idx} className="flex-box"> 
+                    <Tab.Panel key={idx} className="flex-box space-y-5"> 
                         {info.map((section) => (
                           <div className="mBG justify-center align-center font-minecraft text-white md:text-3xl">
                             <Disclosure >
@@ -136,7 +136,7 @@ const Faq = () => {
               }>
                                 <span>{section.title}</span>
                               </Disclosure.Button>
-                              <Disclosure.Panel className=" shadow-none ">
+                              <Disclosure.Panel className="p-10 pt-0">
                                 {section.info}
                               </Disclosure.Panel>
                             </Disclosure>
@@ -153,109 +153,3 @@ const Faq = () => {
 }
 
 export default Faq;
-
-
-      /*
-      <div className="flex justify-center align-center font-minecraft text-white md:text-3xl">
-                
-                <Tab.List className="flex gap-5 px-100 items-center w-200 h-100 mt-10 ">
-                    <Tab className="mBG px-12 py-2 md:px-10 md:py-5 focus:outline-non">GENERAL</Tab>
-                    <Tab className="mBG px-12 py-2 md:px-10 md:py-5">LOGISTICS</Tab>
-                    <Tab className="mBG px-12 py-2 md:px-10 md:py-5">APPLICATIONS</Tab>
-                    <Tab className="mBG px-12 py-2 md:px-10 md:py-5">MISC.</Tab>   
-                </Tab.List> 
-            </div>
-
-<Tab.Panels>
-                <Tab.Panel>Content 1</Tab.Panel>
-                <Tab.Panel>Content 2</Tab.Panel>
-                <Tab.Panel>Content 3</Tab.Panel>
-                <Tab.Panel>Content 4</Tab.Panel>
-            </Tab.Panels>
-
-
-            <Tab.Panels className="mt-2">
-          {Object.values(categories).map((posts, idx) => (
-            <Tab.Panel
-              key={idx}
-              className={classNames(
-                'rounded-xl bg-white p-3',
-                'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2'
-              )}
-            >
-              <ul>
-                {posts.map((post) => (
-                  <li
-                    key={post.id}
-                    className="relative rounded-md p-3 hover:bg-gray-100"
-                  >
-                    <h3 className="text-sm font-medium leading-5">
-                      {post.title}
-                    </h3>
-            </Tab.Panel>
-          ))}
-        </Tab.Panels>
-        /*
-            <Disclosure>
-                <div className="flex justify-center align-center">
-                    <Disclosure.Button className="w-100 h-4/5 mx-auto">
-                        <div className="flex flex-col items-center  w-100 h-100 mt-10">
-                            <div className="mBG px-12 py-2 md:px-20 md:py-5 mt-3 text-white-400">
-                                General
-                            </div>
-                        </div>
-                    </Disclosure.Button>
-                <div className="flex justify-center align-center">
-                    <Disclosure.Panel className="w-100 h-4/5 mx-auto">
-                        <div className="flex flex-col items-center  w-100 h-100 mt-10">
-                            <div className="mBG px-12 py-2 md:px-20 md:py-5 mt-3">
-                                General
-                            </div>
-                        </div>
-                    </Disclosure.Panel>
-                </div>
-
-                    <Disclosure.Button className="w-100 h-4/5 mx-auto">
-                        <div className="flex flex-col items-center  w-100 h-100 mt-10">
-                            <div className="mBG px-12 py-2 md:px-20 md:py-5 mt-3 text-white-400">
-                                Logistics
-                            </div>
-                        </div>
-                    </Disclosure.Button>
-                </div>
-            </Disclosure>
-        </div>
-        
-
-        "mBG px-12 py-2 md:px-10 md:py-5, selected: bg-[#8e8e8e] focus:outline-none " 
-
-
-
-        <Tab.Panels className="mt-5">
-                {Object.values(categories).map((info, idx) => (
-                    <Tab.Panel key={idx} className="flex-box"> 
-                        {info.map((section) => (
-                          <div className=" justify-center align-center font-minecraft text-white md:text-3xl">
-                            <Disclosure >
-                              <Disclosure.Button className={({ open }) =>
-                                  classNames(
-                                  "px-12 py-2 md:px-10 md:py-5",
-                                  "focus:outline-none",
-                                  open
-                                    ? "bg-[#8e8e8e] h-100% shadow-[inset_-5px_-5px_0px_rgb(113,113,113),inset_5px_5px_0px_rgb(177,177,177)]"
-                                    : "mBG"
-                                )
-              }>
-                                <span>{section.title}</span>
-                              </Disclosure.Button>
-                              <Disclosure.Panel className="mBG shadow-none ">
-                                {section.info}
-                              </Disclosure.Panel>
-                            </Disclosure>
-                          </div>
-                        ))}
-                          
-                    </Tab.Panel>
-                ))}
-            </Tab.Panels>
-            */
