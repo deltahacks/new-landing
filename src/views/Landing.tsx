@@ -1,7 +1,9 @@
 import logoImage from "../../public/logo.svg";
 import mlh from "../../public/mlh.svg";
 import Navigation from "../components/navigation/navigation";
+import Faq from "../components/navigation/faq";
 import clouds from "../../public/Clouds.png";
+
 
 const LandingPage = () => {
   return (
@@ -43,6 +45,7 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
+        <Faq />
       </div>
     </div>
   );

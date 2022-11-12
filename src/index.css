@@ -33,8 +33,9 @@
     }
 
     .mBG:hover {
-        background-color: rgba(100, 100, 255, 0.45);
+        background-color: rgba(166, 126, 186, 1);
         z-index: 5;
         color: #ffff7c;
     }
+
 }
