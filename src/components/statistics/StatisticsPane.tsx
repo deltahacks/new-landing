@@ -41,13 +41,11 @@ const StatisticsPane = ({ statistics, opened }: Props) => {
                   <h1 className="text-6xl lg:text-8xl">{statistic.statistic}</h1>
                   <br />
                   <h4 className="text-2xl lg:text-3xl uppercase">{statistic.name}</h4>
-              </> :
-                <div className="flex flex-col justify-center align-center">
-                  {Object.entries(socialIcons).map(([key, value]) => (
-                    <SocialIcon key={key} title={key} logo={value.img} url={value.url} />
-                  ))}
-                </div>
-            }
+              </> : <>
+                {Object.entries(socialIcons).map(([key, value]) => (
+                  <SocialIcon key={key} title={key} logo={value.img} url={value.url} dimensions="10" />
+                ))}
+            </>}
           </div>;
         })}
 
