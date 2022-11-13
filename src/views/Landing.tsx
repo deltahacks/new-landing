@@ -1,6 +1,7 @@
 import Navigation from "../components/navigation/navigation";
 import Caroussel from "../components/carrousel/Caroussel";
 import Intro from "../views/Intro";
+import Statistics from "./Statistics";
 
 // Images
 import snowyIsland from "../../public/snowy-island.png";
@@ -31,6 +32,7 @@ const LandingPage = () => {
         src={snowyIsland}
         alt="snowy-island.png"
       />
+      <Statistics />
     </div>
   );
 };
