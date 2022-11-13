@@ -1,7 +1,7 @@
 import logoImage from "../../public/logo.svg";
-import mlh from "../../public/mlh.svg";
+import mlh from "../../public/mlh.svg"; 
 import Navigation from "../components/navigation/navigation";
-import Faq from "../components/navigation/faq";
+import Faq from "../components/Faq";
 import clouds from "../../public/Clouds.png";
 
 
