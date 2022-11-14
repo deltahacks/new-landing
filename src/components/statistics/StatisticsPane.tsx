@@ -48,11 +48,11 @@ const StatisticsPane = ({ id, statistics, activePaneState }: Props) => {
             bg-gradient-to-b from-amber-400 to-orange-400 duration-500"
           >
             {statistic.name!=="discord"
-              ? <>
+              ? <div className="flex justify-center items-center flex-col">
                   <h1 className="text-6xl lg:text-8xl duration-500">{statistic.statistic}</h1>
                   <br />
                   <h4 className="text-2xl lg:text-3xl uppercase duration-500">{statistic.name}</h4>
-              </> : <>
+              </div> : <>
                 {Object.entries(socialIcons).map(([key, value]) => (
                   <SocialIcon key={key} title={key} logo={value.img} url={value.url} dimensions="w-12 lg:w-16 duration-500" />
                 ))}
