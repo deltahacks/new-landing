@@ -4,11 +4,13 @@ import Discord from "../../../public/Discord.svg";
 import Instagram from "../../../public/Instagram2.svg";
 
 interface Props {
+  id: number;
   statistics: {name: string, statistic: string}[];
-  opened: boolean;
+  activePaneState: [number, (opened: number) => void];
 }
 
-const StatisticsPane = ({ statistics, opened }: Props) => {
+const StatisticsPane = ({ id, statistics, activePaneState }: Props) => {
+  const [activePane, setActivePane] = activePaneState;
 
   const socialIcons = {
     Discord: {
@@ -21,12 +23,21 @@ const StatisticsPane = ({ statistics, opened }: Props) => {
     },
   };
 
+  let position = "";
+  if (id!==activePane) {
+    if (id===0) {
+      position = "-translate-x-full";
+    } else if (id==1) {
+      position = "translate-x-full";
+    }
+  }
+
   return (
       <div
         className={`absolute h-64 lg:h-96 w-fit x-5 p-10 lg:p-16
         flex flex-row space-x-5
         bg-gradient-to-b from-orange-900 to-stone-900
-        duration-500`}
+        duration-500 ${position}`}
         style={{right: 0}}
       >
         {statistics.map((statistic, i) => {
@@ -51,6 +62,8 @@ const StatisticsPane = ({ statistics, opened }: Props) => {
 
         <div className="flex flex-col justify-center items-center">
           <div
+            className={`duration-500 ${!activePane && "rotate-180"}`}
+            onClick={() => setActivePane(activePane ? 0 : 1)}
             style={{
               width: 0,
               height: 0,
