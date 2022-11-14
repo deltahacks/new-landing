@@ -23,7 +23,7 @@ const StatisticsPane = ({ statistics, opened }: Props) => {
 
   return (
       <div
-        className={`absolute h-fit w-fit x-5 p-10 lg:p-16
+        className={`absolute h-64 lg:h-96 w-fit x-5 p-10 lg:p-16
         flex flex-row space-x-5
         bg-gradient-to-b from-orange-900 to-stone-900
         duration-500`}
@@ -33,18 +33,17 @@ const StatisticsPane = ({ statistics, opened }: Props) => {
           return <div
             key={i}
             className="h-full w-fit text-white px-4 py-8 lg:px-6 lg:py-11
-            flex justify-content items-center flex-col
+            grid auto-cols-auto grid-rows-1
             bg-gradient-to-b from-amber-400 to-orange-400 duration-500"
           >
             {statistic.name!=="discord"
               ? <>
-                  <h1 className="text-6xl lg:text-8xl">{statistic.statistic}</h1>
+                  <h1 className="text-6xl lg:text-8xl duration-500">{statistic.statistic}</h1>
                   <br />
-                  <h4 className="text-2xl lg:text-3xl uppercase">{statistic.name}</h4>
+                  <h4 className="text-2xl lg:text-3xl uppercase duration-500">{statistic.name}</h4>
               </> : <>
-                hi
                 {Object.entries(socialIcons).map(([key, value]) => (
-                  <SocialIcon key={key} title={key} logo={value.img} url={value.url} dimensions="10" />
+                  <SocialIcon key={key} title={key} logo={value.img} url={value.url} dimensions="w-12 lg:w-16 duration-500" />
                 ))}
             </>}
           </div>;
