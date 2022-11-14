@@ -42,6 +42,7 @@ const StatisticsPane = ({ statistics, opened }: Props) => {
                   <br />
                   <h4 className="text-2xl lg:text-3xl uppercase">{statistic.name}</h4>
               </> : <>
+                hi
                 {Object.entries(socialIcons).map(([key, value]) => (
                   <SocialIcon key={key} title={key} logo={value.img} url={value.url} dimensions="10" />
                 ))}

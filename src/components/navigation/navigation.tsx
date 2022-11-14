@@ -34,8 +34,8 @@ export const SocialIcon = ({
   dimensions: string;
 }) => {
   return (
-    <a href={url} className="h-fit w-fith filter hover:brightness-90" target="_blank">
-      <img src={logo} alt={title} className={`w-${dimensions}`}></img>
+    <a href={url} className={`h-auto w-${dimensions} filter hover:brightness-90" target="_blank`}>
+      <img src={logo} alt={title} className={`h-auto w-${dimensions}`}></img>
     </a>
   );
 };
