@@ -34,8 +34,8 @@ export const SocialIcon = ({
   dimensions: string;
 }) => {
   return (
-    <a href={url} className="mr-2 filter hover:brightness-90" target="_blank">
-      <img src={logo} alt={title} className={`h-${dimensions} w-${dimensions}`}></img>
+    <a href={url} className="h-fit w-fith filter hover:brightness-90" target="_blank">
+      <img src={logo} alt={title} className={`w-${dimensions}`}></img>
     </a>
   );
 };
@@ -63,7 +63,7 @@ const Navigation = () => {
                 ))}
             </div> */}
 
-      <div className="flex justify-center align-center">
+      <div className="flex justify-center align-center space-x-2 pr-2">
         {Object.entries(socialIcons).map(([key, value]) => (
           <SocialIcon key={key} title={key} logo={value.img} url={value.url} dimensions="8" />
         ))}

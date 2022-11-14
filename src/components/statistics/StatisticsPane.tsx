@@ -13,7 +13,7 @@ const StatisticsPane = ({ statistics, opened }: Props) => {
   const socialIcons = {
     Discord: {
       img: Discord,
-      url: "N/A",
+      url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     },
     Instagram: {
       img: Instagram,
