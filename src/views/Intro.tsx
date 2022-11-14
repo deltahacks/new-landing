@@ -11,7 +11,7 @@ const Intro = () => {
           <img src={logoImage} className="w-full h-full" alt="logo"></img>
           <div className="flex justify-center align-center md:flex-row md:justify-end md:items-center p-1">
             <img src={mlh} className="w-auto h-4" />
-            <span className="text-xs md:text-lg ml-2 whitespace-nowrap">
+            <span className="text-xs md:text-lg ml-2 whitespace-nowrap z-10">
               OFFICIAL MEMBER
             </span>
           </div>
