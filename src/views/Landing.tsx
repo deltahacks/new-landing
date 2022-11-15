@@ -31,9 +31,15 @@ const LandingPage = () => {
       alt="snowy-island.png"
     />
     <img
-      className="absolute top-[220vh] lg:top-[230vh] z-0 lg:z-30 w-2/3 lg:w-1/2 object-cover duration-1000"
+      className="absolute top-[200vh] lg:top-[230vh] z-0 lg:z-30 w-2/3 lg:w-1/2 object-cover duration-1000"
       style={{ left: 0 }}
       src={greenIsland}
+      alt="green-island.png"
+    />
+    <img
+      className="absolute top-[220vh] lg:top-[230vh] z-0 lg:z-30 w-1/4 lg:w-1/4 object-cover duration-1000"
+      style={{ right: 0 }}
+      src={greenIslandBlurred}
       alt="green-island.png"
     />
   </>;
