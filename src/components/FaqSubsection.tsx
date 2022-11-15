@@ -1,7 +1,6 @@
 import { Disclosure } from "@headlessui/react";
 import React, { useState } from "react";
 
-
 interface FaqSubsectionProps {
   title: string;
   info: string;
