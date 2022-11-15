@@ -14,7 +14,7 @@ export const mod = (k: number, n: number): number => {
   }
 };
 
-const CarousselPane = ({ children, id, numPanes, activePane }: Props) => {
+const CarouselPane = ({ children, id, numPanes, activePane }: Props) => {
   let style;
   // Active pane
   if (id == activePane) {
@@ -51,4 +51,4 @@ const CarousselPane = ({ children, id, numPanes, activePane }: Props) => {
   );
 };
 
-export default CarousselPane;
+export default CarouselPane;

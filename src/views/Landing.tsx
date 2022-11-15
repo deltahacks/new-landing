@@ -1,5 +1,5 @@
 import Navigation from "../components/navigation/navigation";
-import Caroussel from "../components/carrousel/Caroussel";
+import Carousel from "../components/carousel/Carousel";
 import Intro from "../views/Intro";
 import Statistics from "./Statistics";
 
@@ -48,7 +48,7 @@ const LandingPage = () => {
     <div className="font-minecraft relative overflow-hidden">
       <Navigation />
       <Intro />
-      <Caroussel />
+      <Carousel />
       <Statistics />
       <Islands />
     </div>

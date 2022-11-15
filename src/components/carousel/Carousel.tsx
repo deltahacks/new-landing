@@ -1,13 +1,11 @@
 import { useState, useEffect } from "react";
-import CarousselPane, { mod } from "./CarousselPane";
+import CarouselPane, { mod } from "./CarouselPane";
 
-// ! not adaptive enough for IPHONE SE or samsung galaxy s8+
-const Carrousel = () => {
+const Carousel = () => {
   const [activePane, setActivePane] = useState(0);
   const [animateArrows, setAnimateArrows] = useState(-5);
 
-  // TODO put title and descriptions in an object and iterate through that
-  const carroussel = [
+  const carousel = [
     {
       title: "About Us",
       desktopDescription: [
@@ -72,11 +70,11 @@ const Carrousel = () => {
   return (
     <div className="px-8 sm:px-14 overflow-hidden">
       <div className="min-h-screen w-full relative flex items-center justify-center flex-col">
-        {carroussel.map((pane, id) => (
-          <CarousselPane
+        {carousel.map((pane, id) => (
+          <CarouselPane
             key={id}
             id={id}
-            numPanes={carroussel.length}
+            numPanes={carousel.length}
             activePane={activePane}
           >
             <div className="hidden sm:block space-y-4">
@@ -92,7 +90,7 @@ const Carrousel = () => {
                 <p key={i}>{line}</p>
               ))}
             </div>
-          </CarousselPane>
+          </CarouselPane>
         ))}
         <div className="absolute t-0 r-0 b-0 l-0 m-auto h-4/6 sm:h-3/5 w-full max-w-4xl">
           <div className="z-40 relative h-full w-full">
@@ -107,7 +105,7 @@ const Carrousel = () => {
                 transform: `translate(${-animateArrows}px, -50%)`,
               }}
               onClick={() =>
-                setActivePane(mod(activePane - 1, carroussel.length))
+                setActivePane(mod(activePane - 1, carousel.length))
               }
             >
               {"<"}
@@ -123,7 +121,7 @@ const Carrousel = () => {
                 transform: `translate(${animateArrows}px, -50%)`,
               }}
               onClick={() =>
-                setActivePane(mod(activePane + 1, carroussel.length))
+                setActivePane(mod(activePane + 1, carousel.length))
               }
             >
               {">"}
@@ -135,4 +133,4 @@ const Carrousel = () => {
   );
 };
 
-export default Carrousel;
+export default Carousel;
