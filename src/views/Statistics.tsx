@@ -17,7 +17,7 @@ const Statistics = () => {
   ];
 
   return (
-    <div className="min-h-screen w-full flex justify-center flex-col relative overflow-hidden">
+    <div className="min-h-[50vh] sm:min-h-screen w-full flex justify-center flex-col relative overflow-hidden">
       {statistics.map((statistic, i) =>
         <StatisticsPane key={i} id={i} statistics={statistic} activePaneState={[activePane, setActivePane]} />
       )}

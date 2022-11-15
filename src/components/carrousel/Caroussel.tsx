@@ -98,6 +98,7 @@ const Carrousel = () => {
           <div className="z-40 relative h-full w-full">
             <button
               className="text-6xl font-bold text-gray-200 duration-1000"
+              // for some reason doesn't work in tailwind
               style={{
                 textShadow:
                   "-3px -3px black, -3px 3px black, 3px 3px black, 3px -3px black",
