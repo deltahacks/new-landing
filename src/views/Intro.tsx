@@ -19,7 +19,7 @@ const Intro = () => {
           </div>
         </div>
         <div className="text-4xl font-bold mb-5"></div>
-        <div className="flex flex-col items-center justify-center font-normal text-lg leading-9 tracking-wider z-10git ">
+        <div className="flex flex-col items-center justify-center font-normal text-lg leading-9 tracking-wider z-10">
           <p className=" text-center  text-white ">
             <span className="text-shadow">JANUARY 13-15, 2023</span>
           </p>
