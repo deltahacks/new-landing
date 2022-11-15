@@ -1,9 +1,6 @@
 import { Disclosure } from "@headlessui/react";
 import React, { useState } from "react";
 
-function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(" ");
-}
 
 interface FaqSubsectionProps {
   title: string;
