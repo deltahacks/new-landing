@@ -32,6 +32,7 @@ const StatisticsPane = ({ id, statistics, activePaneState }: Props) => {
     }
   }
 
+  // arrow for moving between the two statistics panes
   const Arrow = ({dimensions, visibility}: {dimensions: number, visibility: string}) =>
     <div
       className={`${visibility} ${!activePane && "rotate-180"} duration-500`}
