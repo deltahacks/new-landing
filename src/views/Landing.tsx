@@ -9,7 +9,7 @@ import snowyIslandBlurriest from "../../public/snowy-island-blurriest.png";
 
 const LandingPage = () => {
   return (
-    <div className="font-minecraft relative">
+    <div className="font-minecraft relative overflow-hidden">
       <Navigation />
       <Intro />
       <Caroussel />
