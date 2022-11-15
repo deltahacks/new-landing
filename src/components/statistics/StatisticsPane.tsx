@@ -34,7 +34,7 @@ const StatisticsPane = ({ id, statistics, activePaneState }: Props) => {
 
   return (
       <div
-        className={`absolute h-64 lg:h-96 w-fit x-5 p-10 lg:p-16 z-10
+        className={`absolute h-64 lg:h-96 w-fit x-5 p-10 lg:p-16 z-30
         flex flex-row space-x-5
         bg-gradient-to-b from-orange-900 to-stone-900
         duration-500 ${position}`}

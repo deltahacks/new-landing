@@ -42,7 +42,7 @@ const CarousselPane = ({ children, id, numPanes, activePane }: Props) => {
       >
         <div
           className="h-fit lg:h-full w-full text-white p-8 sm:p-11
-        bg-gradient-to-b from-neutral-600 to-neutral-800"
+          bg-gradient-to-b from-neutral-600 to-neutral-800"
         >
           {children}
         </div>
