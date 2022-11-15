@@ -1,3 +1,5 @@
+import { mod } from "../../util";
+
 interface Props {
   children: JSX.Element[] | JSX.Element | string;
   id: number;
@@ -5,16 +7,7 @@ interface Props {
   activePane: number;
 }
 
-export const mod = (k: number, n: number): number => {
-  let res = k % n;
-  if (res < 0) {
-    return res + n;
-  } else {
-    return res;
-  }
-};
-
-const CarouselPane = ({ children, id, numPanes, activePane }: Props) => {
+const CarousselPane = ({ children, id, numPanes, activePane }: Props) => {
   let style;
   // Active pane
   if (id == activePane) {
@@ -51,4 +44,4 @@ const CarouselPane = ({ children, id, numPanes, activePane }: Props) => {
   );
 };
 
-export default CarouselPane;
+export default CarousselPane;

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import CarouselPane, { mod } from "./CarouselPane";
+import CarouselPane from "./CarouselPane";
+import { mod } from "../../util";
 
 const Carousel = () => {
   const [activePane, setActivePane] = useState(0);
