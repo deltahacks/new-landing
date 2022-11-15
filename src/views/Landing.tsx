@@ -2,6 +2,7 @@ import logoImage from "../../public/logo.svg";
 import mlh from "../../public/mlh.svg";
 import Navigation from "../components/navigation/navigation";
 import clouds from "../../public/Clouds.png";
+import Sponsors from "../components/Sponsors";
 
 const LandingPage = () => {
   return (
@@ -43,6 +44,7 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
+        <Sponsors />
       </div>
     </div>
   );
