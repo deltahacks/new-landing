@@ -82,7 +82,7 @@ const categories = {
 };
 const Faq = () => {
   return (
-    <div className="py-10">
+    <div className=" lg:w-full py-10">
       <Tab.Group defaultIndex={0}>
         <div className="gap-x-1">
           <div className="flex flex-wrap lg:flex-nowrap justify-center w-full align-center font-minecraft text-white md:text-xl gap-5">
