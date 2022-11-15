@@ -41,7 +41,7 @@ const LandingPage = () => {
       />
       <Island
         img={greenIsland}
-        dimensions={"top-[150vh] sm:top-[200vh] lg:top-[230vh] z-0 lg:z-30 w-2/3 lg:w-1/2"}
+        dimensions={"top-[150vh] sm:top-[200vh] lg:top-[220vh] z-0 lg:z-30 w-2/3 lg:w-1/2"}
         position={{left: 0}}
       />
       <Island
