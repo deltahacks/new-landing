@@ -9,39 +9,27 @@ function classNames(...classes: string[]) {
 }
 
 const Sponsors = () => {
-  const [handleShow, setHandleShow] = useState<boolean>(false);
-
   return (
-    <div className="font-minecraft text-white">
-      <button
-        onClick={() => {
-          setHandleShow(!handleShow);
-        }}
-        className="align-middle transform px-12 py-2 md:px-10 md:py-3 text-center focus:outline-none text-xl md:text-2xl"
-      >
-        Our sponsors
-      </button>
-      <div
-        className={classNames(
-          "text-center text-2xl md:text-4xl align-middle transform",
-          handleShow ? "rotate-180 transform pt-5 md:pt-10 " : ""
-        )}
-      >
-        <div className="rotate-90 transform">{"<"}</div>
-      </div>
-      {handleShow ? (
-        <div className="min-h-screen">
-          <div className="w-1/5 absolute left-1/2 transform -translate-x-1/2">
-            <img src={RBC} className="" alt="RBC logo"></img>
-          </div>
-          <div className="w-1/3 absolute top-1/2 md:top-[60%] lg:top-[70%] right-1/2 transform -translate-x-1/3">
-            <img src={Arcelor} className="" alt="ArcelorMittal logo"></img>
-          </div>
-          <div className="w-1/3 absolute top-1/2 md:top-[60%] lg:top-[70%] left-1/2 transform translate-x-1/3">
-            <img src={Uizard} className="self-center" alt="Uizard logo"></img>
-          </div>
+    <div className="w-full sm:pb-10 font-minecraft text-white flex justify-center items-center flex-col">
+      <div className="p-12">
+        <div className="shadow-none outline-none transform px-12 py-2 md:px-10 md:py-4 text-center focus:bg-transparent text-xl md:text-3xl">
+          Our Sponsors
         </div>
-      ) : null}
+        <div className="text-center text-2xl md:text-4xl align-middle rotate-90 transform">
+          {">"}
+        </div>
+      </div>
+      <div className="w-full relative h-[40vh] sm:h-[50vh]">
+        <div className="w-1/3 sm:w-1/5 absolute left-1/2 transform -translate-x-1/2">
+          <img src={RBC} className="" alt="RBC logo"></img>
+        </div>
+        <div className="w-1/2 sm:w-1/3 absolute top-1/2 md:top-[60%] lg:top-[70%] right-1/2 transform -translate-x-1/3">
+          <img src={Arcelor} className="" alt="ArcelorMittal logo"></img>
+        </div>
+        <div className="w-1/2 sm:w-1/3 absolute top-1/2 md:top-[60%] lg:top-[70%] left-1/2 transform translate-x-1/3">
+          <img src={Uizard} className="self-center" alt="Uizard logo"></img>
+        </div>
+      </div>
     </div>
   );
 };
