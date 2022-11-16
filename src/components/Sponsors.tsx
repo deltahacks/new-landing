@@ -1,12 +1,6 @@
-import { Disclosure } from "@headlessui/react";
-import React, { useState } from "react";
 import RBC from "../../public/RBC.png";
 import Uizard from "../../public/Uizard.png";
 import Arcelor from "../../public/ArcelorMittal.png";
-
-function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(" ");
-}
 
 const Sponsors = () => {
   return (
