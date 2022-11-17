@@ -25,18 +25,23 @@ const socialIcons = {
 
 const buttons = ["About", "FAQ", "Sponsors", "Contact"];
 
-const SocialIcon = ({
+export const SocialIcon = ({
   logo,
   title,
   url,
+  dimensions,
 }: {
   logo: any;
   title: string;
   url: string;
+  dimensions: string;
 }) => {
   return (
-    <a href={url} className="mr-2 filter hover:brightness-90" target="_blank">
-      <img src={logo} alt={title} className="h-8 w-8"></img>
+    <a
+      href={url}
+      className={`${dimensions} filter hover:brightness-90" target="_blank`}
+    >
+      <img src={logo} alt={title} className={`${dimensions}`}></img>
     </a>
   );
 };
@@ -64,9 +69,15 @@ const Navigation = () => {
                 ))}
             </div> */}
 
-      <div className="flex justify-center align-center">
+      <div className="flex justify-center align-center space-x-2 pr-2">
         {Object.entries(socialIcons).map(([key, value]) => (
-          <SocialIcon key={key} title={key} logo={value.img} url={value.url} />
+          <SocialIcon
+            key={key}
+            title={key}
+            logo={value.img}
+            url={value.url}
+            dimensions="w-8"
+          />
         ))}
       </div>
     </div>
