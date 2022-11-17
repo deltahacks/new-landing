@@ -1,51 +1,80 @@
-import logoImage from "../../public/logo.svg";
-import mlh from "../../public/mlh.svg";
 import Navigation from "../components/navigation/navigation";
-import clouds from "../../public/Clouds.png";
+import Carousel from "../components/carousel/Carousel";
+import Intro from "../views/Intro";
+import Statistics from "./Statistics";
+
+// Images
+import snowyIsland from "../../public/snowy-island.png";
+import snowyIslandBlurred from "../../public/snowy-island-blurred.png";
+import snowyIslandBlurriest from "../../public/snowy-island-blurriest.png";
+import greenIsland from "../../public/green-island.png";
+import greenIslandBlurred from "../../public/green-island-blurred.png";
+import Faq from "../components/Faq";
 import Sponsors from "../components/Sponsors";
 
 const LandingPage = () => {
+  const Island = ({
+    img,
+    dimensions,
+    position,
+  }: {
+    img: string;
+    dimensions: string;
+    position: { left?: number; right?: number };
+  }) => (
+    <>
+      <img
+        className={`absolute ${dimensions} pointer-events-none object-cover duration-1000`}
+        style={position}
+        src={img}
+        alt={img.substring(img.lastIndexOf("/") + 1)}
+      />
+    </>
+  );
+
+  const Islands = () => (
+    <>
+      <Island
+        img={snowyIslandBlurriest}
+        dimensions={"top-[55vh] sm:top-[90vh] lg:top-[120vh] z-20 w-1/4"}
+        position={{ left: 0 }}
+      />
+      <Island
+        img={snowyIslandBlurred}
+        dimensions={"top-[65vh] sm:top-[95vh] z-0 w-3/5 lg:w-2/5"}
+        position={{ right: 0 }}
+      />
+      <Island
+        img={snowyIsland}
+        dimensions={"top-[110vh] sm:top-[170vh] z-0 lg:z-20 w-2/3 lg:w-1/2"}
+        position={{ right: 0 }}
+      />
+      <Island
+        img={greenIsland}
+        dimensions={
+          "top-[150vh] sm:top-[200vh] lg:top-[220vh] z-0 lg:z-30 w-2/3 lg:w-1/2"
+        }
+        position={{ left: 0 }}
+      />
+      <Island
+        img={greenIslandBlurred}
+        dimensions={
+          "top-[170vh] sm:top-[230vh] lg:top-[220vh] z-30 lg:z-30 w-1/4 lg:w-1/4"
+        }
+        position={{ right: 0 }}
+      />
+    </>
+  );
+
   return (
-    <div>
-      <div className="absolute w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-        <img src={clouds} alt="clouds"></img>
-      </div>
+    <div className="font-minecraft relative overflow-hidden">
       <Navigation />
-      <div className="relative flex items-center justify-center flex-col font-minecraft p-14 min-h-screen ">
-        <div>
-          <img src={logoImage} className="w-full h-full" alt="logo"></img>
-          <div className="flex justify-center align-center md:flex-row md:justify-end md:items-center p-1">
-            <img src={mlh} className="w-auto h-4" />
-            <span className="text-xs md:text-lg ml-2 whitespace-nowrap">
-              OFFICIAL MEMBER
-            </span>
-          </div>
-        </div>
-        <div className="text-4xl font-bold mb-5"></div>
-        <div className="flex flex-col items-center justify-center font-normal text-lg leading-9 tracking-wider">
-          <p className=" text-center  text-white ">
-            <span className="text-shadow">JANUARY 13-15, 2023</span>
-          </p>
-          <p className=" text-center  text-white">
-            <span className="text-shadow">IN-PERSON</span>
-          </p>
-        </div>
-        <div className="w-100 h-4/5 mx-auto">
-          <div className="flex flex-col items-center  w-100 h-100 mt-10">
-            <div className="mBG px-12 py-2 md:px-20 md:py-5 mt-3">
-              <a
-                href="https://portal.deltahacks.com/"
-                target="_blank"
-                rel="noreferrer"
-                className="text-white text-center text-xl md:text-3xl tracking-wider "
-              >
-                APPLY NOW
-              </a>
-            </div>
-          </div>
-        </div>
-        <Sponsors />
-      </div>
+      <Intro />
+      <Carousel />
+      <Statistics />
+      <Islands />
+      <Faq />
+      <Sponsors />
     </div>
   );
 };

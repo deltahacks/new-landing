@@ -4,37 +4,35 @@
 @tailwind utilities;
 
 @layer utilities {
-    .text-shadow {
-        text-shadow: 0 0 5px #000;
-    }
+  .text-shadow {
+    text-shadow: 0 0 5px #000;
+  }
 
-    .landingBG {
-        background: linear-gradient(
-            180deg,
-            #a894d0 0%,
-            #ff8e69 19.79%,
-            #ffe195 32.81%,
-            #47f4ff 46.35%,
-            rgba(0, 123, 186, 0.66) 58.85%,
-            #03476d 71.87%,
-            #000000 90.1%
-        );
+  .landingBG {
+    background: linear-gradient(
+      180deg,
+      #a894d0 0%,
+      #ff8e69 19.79%,
+      #ffe195 32.81%,
+      #47f4ff 46.35%,
+      rgba(0, 123, 186, 0.66) 58.85%,
+      #03476d 71.87%,
+      #000000 90.1%
+    );
+    animation: gradient 15s ease infinite;
+  }
 
-        background-size: 400% 400%;
-        animation: gradient 15s ease infinite;
-    }
+  .mBG {
+    background: #606060;
+    box-shadow: inset -5px -5px 0px rgba(49, 49, 49, 0.5),
+      inset 5px 5px 0px #a9a9a9;
+    width: auto;
+    height: 100%;
+  }
 
-    .mBG {
-        background: #606060;
-        box-shadow: inset -5px -5px 0px rgba(49, 49, 49, 0.5),
-            inset 5px 5px 0px #a9a9a9;
-        width: auto;
-        height: 100%;
-    }
-
-    .mBG:hover {
-        background-color: rgba(100, 100, 255, 0.45);
-        z-index: 5;
-        color: #ffff7c;
-    }
+  .mBG:hover {
+    background-color: rgba(100, 100, 255, 0.45);
+    z-index: 5;
+    color: #ffff7c;
+  }
 }
