@@ -52,14 +52,14 @@ const LandingPage = () => {
       <Island
         img={greenIsland}
         dimensions={
-          "top-[150vh] sm:top-[200vh] lg:top-[220vh] z-0 lg:z-30 w-2/3 lg:w-1/2"
+          "top-[150vh] sm:top-[200vh] lg:top-[220vh] z-0 w-2/3 lg:w-1/2"
         }
         position={{ left: 0 }}
       />
       <Island
         img={greenIslandBlurred}
         dimensions={
-          "top-[170vh] sm:top-[230vh] lg:top-[220vh] z-30 lg:z-30 w-1/4 lg:w-1/4"
+          "top-[170vh] sm:top-[230vh] lg:top-[220vh] z-30 w-1/4 lg:w-1/4"
         }
         position={{ right: 0 }}
       />
