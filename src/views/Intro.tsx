@@ -5,7 +5,7 @@ import clouds from "../../public/Clouds.png";
 const Intro = () => {
   return (
     <>
-      <div className="relative flex items-center justify-center flex-col font-minecraft px-14 pt-32 min-h-fit sm:min-h-screen">
+      <div className="relative flex items-center justify-center flex-col font-minecraft px-14 pt-32 md:pt-0 min-h-fit sm:min-h-screen">
         <div className="absolute w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
           <img src={clouds} alt="clouds" />
         </div>
@@ -29,11 +29,9 @@ const Intro = () => {
         </div>
         <div className="w-100 h-4/5 mx-auto">
           <div className="flex flex-col items-center  w-100 h-100 mt-10">
-            <div className="mBG px-12 py-2 md:px-20 md:py-5 mt-3">
+            <div className="mBG px-12 py-2 md:px-20 md:py-5 mt-3 h-[auto!important] absolute z-50">
               <a
                 href="https://portal.deltahacks.com/"
-                target="_blank"
-                rel="noreferrer"
                 className="text-white text-center text-xl md:text-3xl tracking-wider "
               >
                 APPLY NOW
