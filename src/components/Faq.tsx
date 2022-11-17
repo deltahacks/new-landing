@@ -98,7 +98,7 @@ const Faq = () => {
           {">"}
         </div>
       </div>
-      <div className="md:pt-[10em] min-h-[40em] px-4 md:px-0">
+      <div className="md:pt-[10em] min-h-[40em] px-4 md:px-0" id="faq">
         <Tab.Group defaultIndex={0}>
           <div className="gap-x-1">
             <div className="flex flex-wrap lg:flex-nowrap justify-center w-full align-center font-minecraft text-white md:text-xl gap-5">
