@@ -83,6 +83,17 @@ const categories = {
 };
 const Faq = () => {
   const parent = useRef(null);
+  const toScroll = useRef<HTMLDivElement>(null);
+
+  // check if the url contains the faq hash
+  // and scroll into view
+  useEffect(() => {
+    if (window.location.hash === "#faq") {
+      if (toScroll?.current) {
+        toScroll.current.scrollIntoView();
+      }
+    }
+  }, [toScroll, window.location.hash]);
 
   useEffect(() => {
     parent.current && autoAnimate(parent.current);
@@ -98,7 +109,11 @@ const Faq = () => {
           {">"}
         </div>
       </div>
-      <div className="md:pt-[10em] min-h-[40em] px-4 md:px-0" id="faq">
+      <div
+        className="md:pt-[10em] min-h-[40em] px-4 md:px-0"
+        id="faq"
+        ref={toScroll}
+      >
         <Tab.Group defaultIndex={0}>
           <div className="gap-x-1">
             <div className="flex flex-wrap lg:flex-nowrap justify-center w-full align-center font-minecraft text-white md:text-xl gap-5">
@@ -143,5 +158,3 @@ const Faq = () => {
 };
 
 export default Faq;
-
-/* font-minecraft text-white md:text-3xl" */
