@@ -7,7 +7,7 @@ const Statistics = () => {
 
   const statistics = [
     [
-      { name: "hours", statistic: "24" },
+      { name: "hours", statistic: "36" },
       { name: "mentors", statistic: "55" },
       { name: "commits", statistic: "390" },
     ],

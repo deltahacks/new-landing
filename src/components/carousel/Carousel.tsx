@@ -96,7 +96,7 @@ const Carousel = () => {
         <div className="absolute t-0 r-0 b-0 l-0 m-auto h-4/6 sm:h-3/5 w-full max-w-4xl">
           <div className="z-40 relative h-full w-full">
             <button
-              className="text-6xl font-bold text-gray-200 duration-1000"
+              className="text-6xl font-bold text-yellow-300 duration-1000"
               // for some reason doesn't work in tailwind
               style={{
                 textShadow:
@@ -112,7 +112,7 @@ const Carousel = () => {
               {"<"}
             </button>
             <button
-              className="text-6xl font-bold text-gray-200 duration-1000"
+              className="text-6xl font-bold text-yellow-300 duration-1000"
               style={{
                 textShadow:
                   "-3px -3px black, -3px 3px black, 3px 3px black, 3px -3px black",
