@@ -83,7 +83,7 @@ const categories = {
 };
 const Faq = () => {
   const parent = useRef(null);
-  const toScroll = useRef(null);
+  const toScroll = useRef<HTMLDivElement>(null);
 
   // check if the url contains the faq hash
   // and scroll into view
