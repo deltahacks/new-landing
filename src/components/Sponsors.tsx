@@ -4,7 +4,7 @@ import Arcelor from "../../public/ArcelorMittal.png";
 
 const Sponsors = () => {
   return (
-    <div className="w-full sm:pb-10 font-minecraft text-white flex justify-center items-center flex-col">
+    <div className="w-full sm:pb-10 font-minecraft text-white flex justify-center items-center flex-col h-fit">
       <div className="p-12">
         <div className="shadow-none outline-none transform px-12 py-2 md:px-10 md:py-4 text-center focus:bg-transparent text-xl md:text-3xl">
           Our Sponsors
@@ -13,15 +13,13 @@ const Sponsors = () => {
           {">"}
         </div>
       </div>
-      <div className="w-full relative h-[40vh] sm:h-[50vh]">
-        <div className="w-1/3 sm:w-1/5 absolute left-1/2 transform -translate-x-1/2">
+      <div className="w-full relative flex justify-center items-center lg:px-44 lg:pb-32 flex-wrap flex-col">
+        <div className="w-1/5 lg:w-1/2 flex items-center justify-center">
           <img src={RBC} className="" alt="RBC logo"></img>
         </div>
-        <div className="w-1/2 sm:w-1/3 absolute top-1/2 md:top-[60%] lg:top-[70%] right-1/2 transform -translate-x-1/3">
-          <img src={Arcelor} className="" alt="ArcelorMittal logo"></img>
-        </div>
-        <div className="w-1/2 sm:w-1/3 absolute top-1/2 md:top-[60%] lg:top-[70%] left-1/2 transform translate-x-1/3">
-          <img src={Uizard} className="self-center" alt="Uizard logo"></img>
+        <div className="flex justify-evenly items-center lg:gap-64 py-8">
+          <img src={Arcelor} className="w-2/5" alt="ArcelorMittal logo"></img>
+          <img src={Uizard} className="w-2/5" alt="Uizard logo"></img>
         </div>
       </div>
     </div>
