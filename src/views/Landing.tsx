@@ -9,6 +9,7 @@ import snowyIslandBlurred from "../../public/snowy-island-blurred.png";
 import snowyIslandBlurriest from "../../public/snowy-island-blurriest.png";
 import greenIsland from "../../public/green-island.png";
 import greenIslandBlurred from "../../public/green-island-blurred.png";
+import Faq from "../components/Faq";
 
 const LandingPage = () => {
   const Island = ({
@@ -71,6 +72,7 @@ const LandingPage = () => {
       <Carousel />
       <Statistics />
       <Islands />
+      <Faq />
     </div>
   );
 };
