@@ -29,7 +29,7 @@ const FaqSubsection: React.FC<FaqSubsectionProps> = ({ title, info }) => {
           onPointerUp={() => {
             setOpen(!open);
           }}
-          className="px-12 py-4 md:px-10 md:py-5 text-left focus:outline-none"
+          className="w-full h-full px-12 py-4 md:px-10 md:py-5 text-left focus:outline-none"
         >
           <span>{title}</span>
         </Disclosure.Button>
