@@ -119,6 +119,7 @@ const Faq = () => {
               ))}
             </div>
           </div>
+          <div className="h-[2px] bg-white opacity-40 w-full my-8 md:hidden"></div>
           <Tab.Panels className="mt-5" ref={parent}>
             {Object.values(categories).map((info, idx) => (
               <Tab.Panel
