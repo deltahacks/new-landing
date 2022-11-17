@@ -29,7 +29,7 @@ const CarousselPane = ({ children, id, numPanes, activePane }: Props) => {
   return (
     <>
       <div
-        className={`absolute t-0 r-0 b-0 l-0 m-auto h-fit lg:h-3/5 w-full max-w-3xl p-3
+        className={`absolute t-0 r-0 b-0 l-0 m-auto h-fit w-full max-w-3xl p-3
       bg-gradient-to-b from-white to-zinc-400
       duration-500 ${style}`}
       >
