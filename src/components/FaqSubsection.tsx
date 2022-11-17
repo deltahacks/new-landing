@@ -1,5 +1,6 @@
 import { Disclosure } from "@headlessui/react";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import autoAnimate from "@formkit/auto-animate";
 
 interface FaqSubsectionProps {
   title: string;
@@ -8,6 +9,11 @@ interface FaqSubsectionProps {
 
 const FaqSubsection: React.FC<FaqSubsectionProps> = ({ title, info }) => {
   const [open, setOpen] = useState<boolean>(false);
+  const parent = useRef(null);
+
+  useEffect(() => {
+    parent.current && autoAnimate(parent.current);
+  }, [parent]);
 
   return (
     <div
@@ -16,6 +22,7 @@ const FaqSubsection: React.FC<FaqSubsectionProps> = ({ title, info }) => {
           ? "bg-[#8e8e8e] h-100% shadow-[inset_-5px_-5px_0px_rgb(113,113,113),inset_5px_5px_0px_rgb(177,177,177)]"
           : "bg-[#606060] h-full w-auto shadow-[inset_-5px_-5px_0px_rgba(74,74,74),inset_5px_5px_0px_rgb(169,169,169)]"
       }
+      ref={parent}
     >
       <Disclosure>
         <Disclosure.Button

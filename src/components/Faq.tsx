@@ -1,7 +1,8 @@
 import { Tab } from "@headlessui/react";
 import { Disclosure } from "@headlessui/react";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Faqsubsection from "./FaqSubsection";
+import autoAnimate from "@formkit/auto-animate";
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
@@ -81,6 +82,12 @@ const categories = {
   ],
 };
 const Faq = () => {
+  const parent = useRef(null);
+
+  useEffect(() => {
+    parent.current && autoAnimate(parent.current);
+  }, [parent]);
+
   return (
     <div className="lg:w-full sm:px-48 py-10">
       <div className="p-12 pt-0 md:pl-80 text-white">
@@ -112,7 +119,7 @@ const Faq = () => {
               ))}
             </div>
           </div>
-          <Tab.Panels className="mt-5">
+          <Tab.Panels className="mt-5" ref={parent}>
             {Object.values(categories).map((info, idx) => (
               <Tab.Panel
                 key={idx}
