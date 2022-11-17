@@ -89,8 +89,8 @@ const Faq = () => {
   }, [parent]);
 
   return (
-    <div className="lg:w-full sm:px-48 py-10">
-      <div className="p-12 pt-0 md:pl-80 text-white">
+    <div className=" lg:w-full pt-14 sm:px-24 sm:pt-0 py-10">
+      <div className="pt-12 sm:p-12 lg:pt-0 lg:pl-80 text-white">
         <div className=" shadow-none outline-none transform px-12 py-2 md:px-10 md:py-4 text-center focus:bg-transparent text-xl md:text-3xl">
           Frequently Asked<div>Questions</div>
         </div>
@@ -98,10 +98,10 @@ const Faq = () => {
           {">"}
         </div>
       </div>
-      <div className="md:pt-[10em] min-h-[40em] px-4 md:px-0">
+      <div className="pt-[2em] lg:pt-[10em] min-h-[40em] px-4 md:px-0">
         <Tab.Group defaultIndex={0}>
           <div className="gap-x-1">
-            <div className="flex flex-wrap lg:flex-nowrap justify-center w-full align-center font-minecraft text-white md:text-xl gap-5">
+            <div className="flex flex-wrap lg:flex-nowrap justify-center w-full align-center font-minecraft text-white texmd:text-xl gap-5">
               {Object.keys(categories).map((category) => (
                 <Tab
                   key={category}
