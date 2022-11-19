@@ -24,7 +24,7 @@ const LandingPage = () => {
   }) => (
     <>
       <img
-        className={`absolute ${dimensions} pointer-events-none object-cover duration-1000`}
+        className={`absolute ${dimensions} object-cover duration-1000`}
         style={position}
         src={img}
         alt={img.substring(img.lastIndexOf("/") + 1)}

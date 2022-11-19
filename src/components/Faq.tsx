@@ -100,7 +100,7 @@ const Faq = () => {
   }, [parent]);
 
   return (
-    <div className="lg:w-full sm:px-48 py-10 z-50">
+    <div className="lg:w-full sm:px-48 py-10 relative z-50">
       <div className="p-12 pt-0 text-white">
         <div className="shadow-none outline-none transform px-12 py-2 md:px-10 md:py-4 text-center focus:bg-transparent text-xl md:text-3xl">
           <p>Frequently Asked</p>
@@ -123,7 +123,7 @@ const Faq = () => {
                   key={category}
                   className={({ selected }) =>
                     classNames(
-                      "z-50 text-center p-4 md:py-4 md:px-8 h-full w-full md:w-[45%] lg:w-1/4 focus:outline-none",
+                      "text-center p-4 md:py-4 md:px-8 h-full w-full md:w-[45%] lg:w-1/4 focus:outline-none",
                       selected
                         ? "bg-[#8e8e8e] shadow-[inset_-5px_-5px_0px_rgb(113,113,113),inset_5px_5px_0px_rgb(177,177,177)]"
                         : "bg-[#606060] shadow-[inset_-5px_-5px_0px_rgba(74,74,74),inset_5px_5px_0px_rgb(169,169,169)]"
