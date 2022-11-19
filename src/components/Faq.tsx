@@ -102,7 +102,7 @@ const Faq = () => {
   return (
     <div className="lg:w-full sm:px-48 py-10 relative z-50">
       <div className="p-12 pt-0 text-white">
-        <div className="text-shadow outline-none transform px-12 py-2 md:px-10 md:py-4 text-center focus:bg-transparent text-xl md:text-3xl">
+        <div className="text-shadow outline-none transform px-12 py-2 md:px-10 md:py-4 text-center focus:bg-transparent text-xl">
           <p>Frequently Asked</p>
           <p>Questions</p>
         </div>
