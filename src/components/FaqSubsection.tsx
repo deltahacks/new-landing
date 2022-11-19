@@ -19,8 +19,8 @@ const FaqSubsection: React.FC<FaqSubsectionProps> = ({ title, info }) => {
     <div
       className={
         open
-          ? "bg-[#8e8e8e] h-100% shadow-[inset_-5px_-5px_0px_rgb(113,113,113),inset_5px_5px_0px_rgb(177,177,177)]"
-          : "bg-[#606060] h-full w-auto shadow-[inset_-5px_-5px_0px_rgba(74,74,74),inset_5px_5px_0px_rgb(169,169,169)]"
+          ? "bg-[#8e8e8e] shadow-[inset_-5px_-5px_0px_rgb(113,113,113),inset_5px_5px_0px_rgb(177,177,177)]"
+          : "bg-[#606060] shadow-[inset_-5px_-5px_0px_rgba(74,74,74),inset_5px_5px_0px_rgb(169,169,169)]"
       }
       ref={parent}
     >
@@ -29,7 +29,7 @@ const FaqSubsection: React.FC<FaqSubsectionProps> = ({ title, info }) => {
           onPointerUp={() => {
             setOpen(!open);
           }}
-          className="w-full h-full px-12 py-4 md:px-10 md:py-5 text-left focus:outline-none"
+          className="w-full px-12 py-4 md:px-10 md:py-5 text-left focus:outline-none"
         >
           <span>{title}</span>
         </Disclosure.Button>
