@@ -123,7 +123,7 @@ const Faq = () => {
                   key={category}
                   className={({ selected }) =>
                     classNames(
-                      "text-center p-4 md:py-4 md:px-8 h-full w-full md:w-[45%] lg:w-1/4 focus:outline-none",
+                      "z-50 text-center p-4 md:py-4 md:px-8 h-full w-full md:w-[45%] lg:w-1/4 focus:outline-none",
                       selected
                         ? "bg-[#8e8e8e] shadow-[inset_-5px_-5px_0px_rgb(113,113,113),inset_5px_5px_0px_rgb(177,177,177)]"
                         : "bg-[#606060] shadow-[inset_-5px_-5px_0px_rgba(74,74,74),inset_5px_5px_0px_rgb(169,169,169)]"
