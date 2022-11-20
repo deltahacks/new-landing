@@ -7,7 +7,7 @@ const Statistics = () => {
 
   const statistics = [
     [
-      { name: "hours", statistic: "24" },
+      { name: "hours", statistic: "36" },
       { name: "mentors", statistic: "55" },
       { name: "commits", statistic: "390" },
     ],
@@ -20,6 +20,14 @@ const Statistics = () => {
 
   return (
     <div className="min-h-[50vh] sm:min-h-screen w-full z-30 flex justify-center flex-col relative overflow-hidden">
+      <div className="absolute top-0 left-0 right-0 m-auto text-white">
+        <div className="text-shadow outline-none transform px-12 py-2 md:px-10 md:py-4 text-center focus:bg-transparent text-xl">
+          Our Statistics
+        </div>
+        <div className="text-shadow text-center text-2xl md:text-4xl align-middle rotate-90 transform">
+          {">"}
+        </div>
+      </div>
       {statistics.map((statistic, i) => (
         <StatisticsPane
           key={i}

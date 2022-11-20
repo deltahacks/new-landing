@@ -6,7 +6,7 @@ const Sponsors = () => {
   return (
     <div className="w-full sm:pb-10 font-minecraft text-white flex justify-center items-center flex-col h-fit">
       <div className="p-12">
-        <div className="shadow-none outline-none transform px-12 py-2 md:px-10 md:py-4 text-center focus:bg-transparent text-xl md:text-3xl">
+        <div className="shadow-none outline-none transform px-12 py-2 md:px-10 md:py-4 text-center focus:bg-transparent text-xl">
           Our Sponsors
         </div>
         <div className="text-center text-2xl md:text-4xl align-middle rotate-90 transform">
