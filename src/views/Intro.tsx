@@ -28,16 +28,16 @@ const Intro = () => {
           </p>
         </div>
         <div className="w-100 h-4/5 mx-auto">
-          <div className="flex flex-col items-center  w-100 h-100 mt-10">
-            <div className="mBG px-12 py-2 md:px-20 md:py-5 mt-3 h-[auto!important] absolute z-50">
-              <a
-                href="https://portal.deltahacks.com/"
-                className="text-white text-center text-xl md:text-3xl tracking-wider "
-              >
+          <a
+            href="https://portal.deltahacks.com/"
+            className="text-white text-center text-xl md:text-3xl tracking-wider "
+          >
+            <span className="flex flex-col items-center  w-100 h-100 mt-10">
+              <span className="mBG px-12 py-2 md:px-20 md:py-5 mt-3 h-[auto!important] absolute z-50">
                 APPLY NOW
-              </a>
-            </div>
-          </div>
+              </span>
+            </span>
+          </a>
         </div>
       </div>
     </>

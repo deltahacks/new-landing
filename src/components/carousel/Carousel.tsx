@@ -70,14 +70,6 @@ const Carousel = () => {
 
   return (
     <div className="px-8 sm:px-14 overflow-hidden">
-      <div className="pt-[24vh] sm:pt-0 text-white relative z-50">
-        <div className="text-shadow outline-none transform px-12 py-2 md:px-10 md:py-4 text-center focus:bg-transparent text-xl">
-          Our Sponsors
-        </div>
-        <div className="text-shadow text-center text-2xl md:text-4xl align-middle rotate-90 transform">
-          {">"}
-        </div>
-      </div>
       <div className="min-h-screen w-full relative flex items-center justify-center flex-col">
         {carousel.map((pane, id) => (
           <CarouselPane
