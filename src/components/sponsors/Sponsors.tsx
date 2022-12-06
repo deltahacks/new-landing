@@ -1,6 +1,6 @@
-import RBC from "../../public/RBC.png";
-import Uizard from "../../public/Uizard.png";
-import Arcelor from "../../public/ArcelorMittal.png";
+import RBC from "../../../public/RBC.png";
+import Uizard from "../../../public/Uizard.png";
+import Arcelor from "../../../public/ArcelorMittal.png";
 
 const Sponsors = () => {
   return (
