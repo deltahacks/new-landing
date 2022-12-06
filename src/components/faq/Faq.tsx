@@ -55,7 +55,7 @@ const categories = {
   Applications: [
     {
       title: "What's the application deadline?",
-      info: "Applications are due Friday, November 4, 2022. Apply by then for a better chance to be accepted!",
+      info: "Applications are due Friday, December 10, 2022 at 11:59PM. Apply by then for a better chance to be accepted!",
     },
     {
       title: "How long will it be until I hear back about my application?",
