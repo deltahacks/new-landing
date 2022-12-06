@@ -10,7 +10,7 @@ import snowyIslandBlurriest from "../../public/snowy-island-blurriest.png";
 import greenIsland from "../../public/green-island.png";
 import greenIslandBlurred from "../../public/green-island-blurred.png";
 import Faq from "../components/faq/Faq";
-import Sponsors from "../components/Sponsors";
+import Sponsors from "../components/sponsors/Sponsors";
 
 const LandingPage = () => {
   const Island = ({
