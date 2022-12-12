@@ -33,7 +33,7 @@ const categories = {
   Logistics: [
     {
       title: "Will DeltaHacks 9 be in person or virtual?",
-      info: "With the current outlook, DeltaHacks will be taking place in-person this year; however we will not include overnight stay. Busing services from other campuses or around McMaster during the hackathon is still undetermined.",
+      info: "With the current outlook, DeltaHacks will be taking place in-person this year! Busing services from other campuses or around McMaster during the hackathon are still undetermined.",
     },
     {
       title: "Will attendees still get awesome swag?",
