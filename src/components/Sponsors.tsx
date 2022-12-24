@@ -54,12 +54,11 @@ const Sponsors = () => {
             <img src={FDM} className="" alt="FDM logo"></img>
           </a>
         </div>
-
         <div className="flex justify-evenly items-center lg:gap-32 py-8">
-          <a className="w-2/5" href="https://www.eng.mcmaster.ca/">
+          <a className="w-2/5" href="https://www.verbwire.com/">
             <img src={Verbwire} alt="VerbWire Logo"></img>
           </a>
-          <a className="w-2/5" href="https://www.eng.mcmaster.ca/materials">
+          <a className="w-2/5" href="https://www.stickeryou.com/">
             <img src={Stickeryou} alt="StickerYou Logo"></img>
           </a>
         </div>
