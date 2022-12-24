@@ -19,7 +19,21 @@ const Sponsors = () => {
           {">"}
         </div>
       </div>
-      <div className="w-full relative flex justify-center items-center lg:px-44 lg:pb-32 flex-wrap flex-col">
+      <div className="w-full relative flex justify-center items-center lg:px-44 flex-wrap flex-col">
+        <div className="flex justify-evenly items-center lg:gap-32 py-8">
+          <a className="w-2/5" href="https://www.eng.mcmaster.ca/">
+            <img
+              src={Fireball}
+              className="w-2/3 align:center"
+              alt="McMaster Fireball Logo"
+            ></img>
+          </a>
+          <a className="w-2/5" href="https://www.eng.mcmaster.ca/materials">
+            <img src={MacMatSci} alt="McMaster Material Science Logo"></img>
+          </a>
+        </div>
+      </div>
+      <div className="w-full relative flex justify-center items-center lg:px-44 flex-wrap flex-col">
         <div className="w-1/5 lg:w-1/2 flex items-center justify-center">
           <a href="https://www.rbc.com/canada.html">
             <img src={RBC} className="" alt="RBC logo"></img>
@@ -35,24 +49,18 @@ const Sponsors = () => {
         </div>
       </div>
       <div className="w-full relative flex justify-center items-center lg:px-44 lg:pb-32 flex-wrap flex-col">
-        <div className="w-1/5 lg:w-1/2 flex items-center justify-center">
+        <div className="w-1/5 lg:w-1/3 flex items-center justify-center">
           <a href="https://www.fdmgroup.com/en-us/home-us/">
             <img src={FDM} className="" alt="FDM logo"></img>
           </a>
         </div>
+
         <div className="flex justify-evenly items-center lg:gap-32 py-8">
           <a className="w-2/5" href="https://www.eng.mcmaster.ca/">
-            <img src={Fireball} alt="McMaster Fireball Logo"></img>
+            <img src={Verbwire} alt="VerbWire Logo"></img>
           </a>
           <a className="w-2/5" href="https://www.eng.mcmaster.ca/materials">
-            <img src={MacMatSci} alt="McMaster Material Science Logo"></img>
-          </a>
-        </div>
-      </div>
-      <div className="w-full relative flex justify-center items-center lg:px-44 lg:pb-32 flex-wrap flex-col">
-        <div className="w-1/5 lg:w-1/2 flex items-center justify-center">
-          <a href="https://www.siemens.com/global/en.html">
-            <img src={Siemens} className="" alt="Siemens Logo"></img>
+            <img src={Stickeryou} alt="StickerYou Logo"></img>
           </a>
         </div>
       </div>
