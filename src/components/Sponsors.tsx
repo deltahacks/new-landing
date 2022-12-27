@@ -5,7 +5,7 @@ import FDM from "../../public/FDM.svg";
 import Fireball from "../../public/fireball_eng.png";
 import MacMatSci from "../../public/mcm-matsci_left-rev_png.png";
 import Verbwire from "../../public/Verbwire.svg";
-import Stickeryou from "../../public/SY_logo.png";
+import Stickeryou from "../../public/SY_Logo.png";
 
 const Sponsors = () => {
   return (
