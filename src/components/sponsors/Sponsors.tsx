@@ -1,14 +1,12 @@
-import RBC from "../../public/RBC.png";
-import Arcelor from "../../public/ArcelorMittal.png";
-import Balsamiq from "../../public/balsamiq-logo.png";
-import FDM from "../../public/FDM.svg";
-import Fireball from "../../public/fireball_eng.png";
-import MacMatSci from "../../public/mcm-matsci_left-rev_png.png";
-import Verbwire from "../../public/Verbwire.svg";
-import Stickeryou from "../../public/SY_Logo.png";
-import Siemens from "../../public/Siemens.svg";
-
-import Uizard from "../../../public/Uizard.png";
+import RBC from "../../../public/RBC.png";
+import Arcelor from "../../../public/ArcelorMittal.png";
+import Balsamiq from "../../../public/balsamiq-logo.png";
+import FDM from "../../../public/FDM.svg";
+import Fireball from "../../../public/fireball_eng.png";
+import MacMatSci from "../../../public/mcm-matsci_left-rev_png.png";
+import Verbwire from "../../../public/Verbwire.svg";
+import Stickeryou from "../../../public/SY_Logo.png";
+import Siemens from "../../../public/Siemens.svg";
 
 const Sponsors = () => {
   return (
