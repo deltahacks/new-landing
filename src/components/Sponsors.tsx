@@ -43,7 +43,7 @@ const Sponsors = () => {
           <a className="w-2/5" href="https://corporate.arcelormittal.com/">
             <img src={Arcelor} alt="ArcelorMittal logo"></img>
           </a>
-          <a className="w-2/5" href="">
+          <a className="w-2/5" href="https://www.siemens.com/global/en.html">
             <img src={Siemens} alt="Siemens logo"></img>
           </a>
         </div>
