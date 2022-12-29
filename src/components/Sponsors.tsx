@@ -6,6 +6,7 @@ import Fireball from "../../public/fireball_eng.png";
 import MacMatSci from "../../public/mcm-matsci_left-rev_png.png";
 import Verbwire from "../../public/Verbwire.svg";
 import Stickeryou from "../../public/SY_Logo.png";
+import Siemens from "../../public/Siemens.svg";
 
 const Sponsors = () => {
   return (
@@ -42,8 +43,8 @@ const Sponsors = () => {
           <a className="w-2/5" href="https://corporate.arcelormittal.com/">
             <img src={Arcelor} alt="ArcelorMittal logo"></img>
           </a>
-          <a className="w-2/5" href="https://balsamiq.com/">
-            <img src={Balsamiq} alt="Balsamiq logo"></img>
+          <a className="w-2/5" href="">
+            <img src={Siemens} alt="Siemens logo"></img>
           </a>
         </div>
       </div>
@@ -59,6 +60,9 @@ const Sponsors = () => {
           </a>
           <a className="w-2/5" href="https://www.stickeryou.com/">
             <img src={Stickeryou} alt="StickerYou Logo"></img>
+          </a>
+          <a className="w-2/5" href="https://balsamiq.com/">
+            <img src={Balsamiq} alt="Balsamiq logo"></img>
           </a>
         </div>
       </div>
