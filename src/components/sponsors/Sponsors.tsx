@@ -8,6 +8,8 @@ import Verbwire from "../../public/Verbwire.svg";
 import Stickeryou from "../../public/SY_Logo.png";
 import Siemens from "../../public/Siemens.svg";
 
+import Uizard from "../../../public/Uizard.png";
+
 const Sponsors = () => {
   return (
     <div className="w-full sm:pb-10 font-minecraft text-white flex justify-center items-center flex-col h-fit">

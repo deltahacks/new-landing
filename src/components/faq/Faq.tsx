@@ -33,7 +33,7 @@ const categories = {
   Logistics: [
     {
       title: "Will DeltaHacks 9 be in person or virtual?",
-      info: "With the current outlook, DeltaHacks will be taking place in-person this year; however we will not include overnight stay. Our intended approach will be to have buses to and from McMaster on a daily basis during the duration of the event to help transport hackers.",
+      info: "With the current outlook, DeltaHacks will be taking place in-person this year! Busing services from other campuses or around McMaster during the hackathon are still undetermined.",
     },
     {
       title: "Will attendees still get awesome swag?",
@@ -55,7 +55,7 @@ const categories = {
   Applications: [
     {
       title: "What's the application deadline?",
-      info: "Priority applications are due Friday, November 4, 2022. Apply by then for a better chance to be accepted!",
+      info: "Applications are due Friday, December 10, 2022 at 11:59PM. Apply by then for a better chance to be accepted!",
     },
     {
       title: "How long will it be until I hear back about my application?",

@@ -1,5 +1,5 @@
 import logoImage from "../../public/logo.svg";
-import mlh from "../../public/mlh.svg";
+import mlh_logo from "../../public/mlh-logo.svg";
 import clouds from "../../public/Clouds.png";
 
 const Intro = () => {
@@ -11,12 +11,12 @@ const Intro = () => {
         </div>
         <div className="z-10">
           <img src={logoImage} className="w-full h-full z-10" alt="logo" />
-          <div className="flex justify-center align-center md:flex-row md:justify-end md:items-center p-1">
-            <img src={mlh} className="w-auto h-4" />
-            <span className="text-xs md:text-lg ml-2 whitespace-nowrap z-10">
-              OFFICIAL MEMBER
-            </span>
-          </div>
+          {/*<div className="flex justify-center align-center md:flex-row md:justify-end md:items-center p-1">*/}
+          <img
+            src={mlh_logo}
+            className="absolute w-auto -translate-x-1/2 h-16 md:h-32 right-20 lg:right-32 xl:right-64"
+          />
+          {/*</div>*/}
         </div>
         <div className="text-4xl font-bold mb-5"></div>
         <div className="flex flex-col items-center justify-center font-normal text-lg leading-9 tracking-wider z-10">
