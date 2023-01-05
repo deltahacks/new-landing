@@ -33,7 +33,7 @@ const categories = {
   Logistics: [
     {
       title: "Will DeltaHacks 9 be in person or virtual?",
-      info: "With the current outlook, DeltaHacks will be taking place in-person this year; however we will not include overnight stay. Our intended approach will be to have buses to and from McMaster on a daily basis during the duration of the event to help transport hackers.",
+      info: "With the current outlook, DeltaHacks will be taking place in-person this year! Busing services from other campuses or around McMaster during the hackathon are still undetermined.",
     },
     {
       title: "Will attendees still get awesome swag?",
