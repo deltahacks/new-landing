@@ -1,8 +1,22 @@
 import logoImage from "../../public/logo.svg";
 import mlh_logo from "../../public/mlh-logo.svg";
 import clouds from "../../public/Clouds.png";
+import { readFile, utils, writeFile } from 'xlsx';
 
 const Intro = () => {
+  const loadUrl = ()=>{
+    const file = "test.xlsx";
+    const reader = new FileReader();
+    const wb = readFile('test.xlsx');
+    const sheets = wb.SheetNames;
+    console.log(wb)
+    if (sheets.length) {
+        console.log(sheets)
+        const rows = utils.sheet_to_json(wb.Sheets[sheets[0]]);
+    }
+    const fileNameBlob = new Blob([file], { type : 'plain/text' });
+    reader.readAsArrayBuffer(fileNameBlob);
+  }
   return (
     <>
       <div className="relative flex items-center justify-center flex-col font-minecraft px-14 pt-32 md:pt-0 min-h-fit sm:min-h-screen">
@@ -25,6 +39,9 @@ const Intro = () => {
           </p>
           <p className=" text-center  text-white">
             <span className="text-shadow">IN-PERSON</span>
+          </p>
+          <p className=" text-center  text-white">
+            <span className="text-shadow">You can view our schedule <button onClick={loadUrl}>here</button></span>
           </p>
         </div>
         <div className="w-100 h-4/5 mx-auto">
