@@ -12,10 +12,7 @@ const Intro = () => {
         <div className="z-10">
           <img src={logoImage} className="w-full h-full z-10" alt="logo" />
           {/*<div className="flex justify-center align-center md:flex-row md:justify-end md:items-center p-1">*/}
-          <img
-            src={mlh_logo}
-            className="absolute w-auto -translate-x-1/2 h-16 md:h-32 right-20 lg:right-32 xl:right-64"
-          />
+
           {/*</div>*/}
         </div>
         <div className="text-4xl font-bold mb-5"></div>
