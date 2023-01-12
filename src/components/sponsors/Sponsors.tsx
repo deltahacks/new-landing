@@ -7,6 +7,8 @@ import MacMatSci from "../../../public/mcm-matsci_left-rev_png.png";
 import Verbwire from "../../../public/Verbwire.svg";
 import Stickeryou from "../../../public/SY_Logo.png";
 import Siemens from "../../../public/Siemens.svg";
+import DigitalOcean from "../../../public/digitalocean-logo-vector-1.png";
+import Wolfram from "../../../public/WolframHackathonLogo2023-1.png";
 
 const Sponsors = () => {
   return (
@@ -49,9 +51,17 @@ const Sponsors = () => {
         </div>
       </div>
       <div className="w-full relative flex justify-center items-center lg:px-44 lg:pb-32 flex-wrap flex-col">
-        <div className="w-1/5 lg:w-1/3 flex items-center justify-center">
+        <div className="w-1/5 lg:w-1/3 flex items-center justify-center pb-8">
           <a href="https://www.fdmgroup.com/en-us/home-us/">
             <img src={FDM} className="" alt="FDM logo"></img>
+          </a>
+        </div>
+        <div className="flex justify-evenly items-center lg:gap-32 py-8">
+          <a className="w-2/5" href="https://www.digitalocean.com/">
+            <img src={DigitalOcean} alt="Digital Ocean logo"></img>
+          </a>
+          <a className="w-2/5" href="https://www.wolfram.com/language/">
+            <img src={Wolfram} alt="Wolfram Language logo"></img>
           </a>
         </div>
         <div className="flex justify-evenly items-center lg:gap-32 py-8">
